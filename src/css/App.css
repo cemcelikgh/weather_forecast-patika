@@ -1,0 +1,82 @@
+:root {
+  --white: #EDF2F4;
+  --light-green: #779136;
+  --green: #445f08;
+  --dark-green: #38371c;
+  --orange: #faa32f;
+  --dark-orange: #d28f1c;
+  --pink: #ee4288;
+  --brown: #68080b;
+}
+
+header {
+  padding-top: 20vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+main {
+  margin-top: 1rem;
+}
+
+main > div {
+  padding: 1rem;
+  background-color: rgba(56, 55, 28, 0.4);
+}
+
+.preloader {
+  background-color: white;
+  width: 573px;
+  height: 133px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  border: 1px solid var(--orange);
+  background-color: var(--light-green);
+  color: var(--white);
+  font-size: medium;
+}
+
+section {
+  padding-top: 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  border: 1px solid white;
+}
+
+li:first-child {
+  border-right: 1px solid white;
+  background-color: rgba(223, 220, 220, 0.10);
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+li > div:nth-of-type(1) {
+  width: 75px;
+  height: 75px;
+}
+
+.temperatures {
+  display: flex;
+  width: 75px;
+  justify-content: space-evenly;
+}
