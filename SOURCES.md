@@ -31,3 +31,7 @@ Color palette
 cloud-sun-rain-solid.svg
 <br>Aug 2024
 <br><https://fontawesome.com/icons/cloud-sun-rain?f=classic&s=solid>
+
+gh-pages
+<br>Aug 2024
+<br><https://github.com/gitname/react-gh-pages>
