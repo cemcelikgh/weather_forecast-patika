@@ -29,7 +29,6 @@ main > div {
 }
 
 .preloader {
-  background-color: white;
   width: 573px;
   height: 133px;
   display: flex;

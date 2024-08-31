@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import { CityContext } from "../Context.js";
+import { CityContext } from "../contexts/CityContext.js";
 import cities from "../other/cities.js";
 
 function SelectCity() {
@@ -25,7 +25,7 @@ function SelectCity() {
         navigator.geolocation.getCurrentPosition(success, error);
       };
     },
-    []
+    [setSelectedCity]
   );
 
   const handleCityChange = (event) => {
