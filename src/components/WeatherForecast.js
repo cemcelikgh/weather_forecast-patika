@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from "react";
-import { CityContext } from "../Context.js";
+import { CityContext } from "../contexts/CityContext.js";
 import plantPreloader from '../other/plant-preloader.gif';
 import cities from "../other/cities.js"
 import '../css/weather-icons.css';
@@ -10,7 +10,7 @@ function WeatherForecast() {
 
   const [ weatherData, setWeatherData ] = useState([]);
   const [ days, setDays ] = useState([]);
-  const [ loading, setLoading ] = useState(false);
+  const [ loading, setLoading ] = useState(true);
 
   useEffect(() => {
     setLoading(true);
@@ -51,8 +51,8 @@ function WeatherForecast() {
           <p>{days[index]}</p>
           <div className={`wc${day.values.weatherCodeMin}`}></div>
           <div className="temperatures">
-            <div>{parseInt(day.values.temperatureMin)}°</div>
-            <div>{parseInt(day.values.temperatureMax)}°</div>
+            <div>{parseInt(day.values.temperatureMin)}&#176;</div>
+            <div>{parseInt(day.values.temperatureMax)}&#176;</div>
           </div>
         </li>
         ))}
